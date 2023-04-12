@@ -22,6 +22,15 @@ namespace Blog.Web.Mvc.Controllers
         {
             return View();
         }
+        public IActionResult Home()
+        {
+            return View();
+        }
+        public IActionResult Home2()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
