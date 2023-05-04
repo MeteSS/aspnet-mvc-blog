@@ -21,12 +21,12 @@
 									Home
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="index.html">Home 1</a>
-									<a class="dropdown-item" href="index-2.html">Home 2</a>
-									<a class="dropdown-item" href="index-3.html">Home 3</a>
-									<a class="dropdown-item" href="index-4.html">Home 4</a>
-									<a class="dropdown-item" href="index-5.html">Home 5</a>
-									<a class="dropdown-item" href="index-6.html">Home 6</a>
+									<a class="dropdown-item" asp-controller="Home"  asp-action="index">Home 1</a>
+									<a class="dropdown-item" asp-controller="home" asp-action="inex">Home 2</a>
+									<a class="dropdown-item" asp-controller="home" asp-action="index" >Home 3</a>
+									<a class="dropdown-item" asp-controller="home" asp-action="index">Home 4</a>
+									<a class="dropdown-item" asp-controller="blog" asp-action="detail">Home 5</a>
+									<a class="dropdown-item" asp-controller="page" asp-action="detail">Home 6</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
@@ -40,7 +40,8 @@
 								</div>
 							</li>
 							<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-							<li class="nav-item"><a href="fashion.html" class="nav-link">Category</a></li>
+						
+							<li class="nav-item"><a asp-controller="category" asp-action="index" class="nav-link">Category</a></li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Post Format
